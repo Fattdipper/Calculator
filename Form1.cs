@@ -234,5 +234,11 @@ namespace Calculator
             partOfCalculation = PartOfCalculation.FIRST_NUMBER;
             answerLabel.Text = "";
         }
+
+        private void button0_Click(object sender, EventArgs e)
+        {
+            AddToString("0", partOfCalculation);
+            DisplayCalculation(num1, num2, operation);
+        }
     }
 }
